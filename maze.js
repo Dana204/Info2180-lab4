@@ -8,7 +8,6 @@ function changeToRed() {
 }
 
 function changeToNormal() {
-    //single border: document.getElementById("boundary1").style.borderColor = "red";
     var boundaries = maze.querySelectorAll("div.boundary");
 
     boundaries.forEach(function(item) {
@@ -17,10 +16,11 @@ function changeToNormal() {
 }
 
 function win(){
-    var popup = document.getElementById('#end'); 
-    e.onmouseover = function() {
-        alert('YOU WIN!');
-     }
+    var popup =maze.etElementById('#end'); 
+   popup.innerHTML = 'Fred Flinstone';
+    // e.onmouseover = function() {
+    //     console.log(alert('YOU WIN!'));
+    //  }
    
 }
 

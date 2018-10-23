@@ -16,13 +16,13 @@ You should download this file for your lab, but you should not edit its contents
 
 		<!-- This part of the page represents the maze -->
 		<div id="maze" onmouseleave="changeToRed()">
-			<div id="start" onclick="changeToNormal()">S</div>
-			<div class="boundary" id="boundary1" onmouseover="changeToRed()"></div>
-			<div class="boundary" onmouseover="changeToRed(), alert('You Lose!')" ></div>
-			<div class="boundary" onmouseover="changeToRed(), alert('You Lose!')"></div>
-			<div class="boundary" onmouseover="changeToRed(), alert('You Lose!')"></div>
-			<div class="boundary" onmouseover="changeToRed(), alert('You Lose!')"></div>
-			<div id="end" onmouseover="alert('You Win!')">E</div>
+			<div id="start" onclick="changeToNormal(), undo()">S</div>
+			<div class="boundary" id="boundary1" onmouseover="changeToRed(), lose()"></div>
+			<div class="boundary" onmouseover="changeToRed(), lose()"></div>
+			<div class="boundary" onmouseover="changeToRed(), lose()"></div>
+			<div class="boundary" onmouseover="changeToRed(), lose()"></div>
+			<div class="boundary" onmouseover="changeToRed(), lose()"></div>
+			<div id="end" onmouseover="win()">E</div>
 		</div>
 
 		<p>
@@ -35,6 +35,7 @@ You should download this file for your lab, but you should not edit its contents
 			Good luck!
 		</p>
 
-		<h2 id="status"></h2>
+		<h2 id="status1"></h2>
+
 	</body>
 </html>

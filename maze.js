@@ -3,20 +3,26 @@ function changeToRed() {
     var boundaries = document.querySelectorAll("div.boundary");
 
     boundaries.forEach(function(item) {
-        item.style.borderColor= "red";
+        item.style.borderColor = "red";
     });
 }
 
 function changeToNormal() {
-    var boundaries = maze.querySelectorAll("div.boundary");
+    var boundaries = document.querySelectorAll("div.boundary");
 
     boundaries.forEach(function(item) {
-        item.style.borderColor= "black";
+        item.style.borderColor = "black";
     });
 }
 
-// function win(){
-//     document.getElementById("#end").innerHTML = "You win!"; 
-   
-// }
+function win(){
+    document.getElementById("status1").innerHTML = "You Win!";  
+}
 
+function lose(){
+    document.getElementById("status1").innerHTML = "You Lose!";  
+}
+
+function undo(){
+    document.getElementById("status1").innerHTML = ""; 
+}

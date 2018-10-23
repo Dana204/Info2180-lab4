@@ -26,3 +26,5 @@ function lose(){
 function undo(){
     document.getElementById("status1").innerHTML = ""; 
 }
+
+window.onload = changeToNormal, undo;

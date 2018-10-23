@@ -15,14 +15,14 @@ You should download this file for your lab, but you should not edit its contents
 		<h2 id="status">Move your mouse over the "S" to begin.</h2>
 
 		<!-- This part of the page represents the maze -->
-		<div id="maze" onmouseleave="changeToRed()">
+		<div id="maze" onmouseleave="changeToRed(), lose()">
 			<div id="start" onclick="changeToNormal(), undo()">S</div>
 			<div class="boundary" id="boundary1" onmouseover="changeToRed(), lose()"></div>
 			<div class="boundary" onmouseover="changeToRed(), lose()"></div>
 			<div class="boundary" onmouseover="changeToRed(), lose()"></div>
 			<div class="boundary" onmouseover="changeToRed(), lose()"></div>
 			<div class="boundary" onmouseover="changeToRed(), lose()"></div>
-			<div id="end" onmouseover="win()">E</div>
+			<div id="end" onmouseover="win()" onmouseleave="changeToNormal()">E</div>
 		</div>
 
 		<p>
